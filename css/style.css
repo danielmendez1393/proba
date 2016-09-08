@@ -2831,7 +2831,8 @@ textarea {
 /*------------------------------------------------*/
 .imagen-median{
     width: 100%;
-    max-width: 150px;
+    max-width: 220px;
+    height: 170px;
     align-self: center;
     align-items: center;
 }
@@ -2968,6 +2969,12 @@ textarea {
 /*--------------[TABS STYLE 2]-----------*/
 /*------------------------------------------------*/
 
+.listatab{
+    color: rgb(32,113,168);
+    text-overflow: ellipsis;
+    text-orientation: all;
+    text-align: center;
+}
 .features-content h4 {
     text-transform: uppercase;
     margin-bottom: 20px;
