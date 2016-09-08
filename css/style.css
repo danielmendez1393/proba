@@ -2829,7 +2829,12 @@ textarea {
 /*------------------------------------------------*/
 /*--------------[TABS STYLE 1]-----------*/
 /*------------------------------------------------*/
-
+.imagen-median{
+    width: 100%;
+    max-width: 150px;
+    align-self: center;
+    align-items: center;
+}
 .imagen-chicas{
     display: inline-block;
     max-width: 100px;
