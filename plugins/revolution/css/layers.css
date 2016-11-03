@@ -1233,9 +1233,9 @@ website:   	http://www.themepunch.com
 	border-width:0;
 	color:rgba(255,255,255,1.00);
 	font-family:Roboto Slab;
-	font-size:70px;
+	font-size:50px;
 	font-style:normal;
-	font-weight:400;
+	font-weight:300;
 	line-height:60px;
 	padding:0;
 	text-decoration:none;
@@ -3489,9 +3489,9 @@ website:   	http://www.themepunch.com
      .tp-caption.Woo-TitleLarge,
     .Woo-TitleLarge {
         color: rgba(0, 0, 0, 1.00);
-        font-size: 40px;
-        line-height: 40px;
-        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 300;
         font-style: normal;
         font-family: Playfair Display;
         padding: 0 0 0 0px;
@@ -3507,7 +3507,7 @@ website:   	http://www.themepunch.com
     .tp-caption.Woo-Rating,
     .Woo-Rating {
         color: rgba(0, 0, 0, 1.00);
-        font-size: 14px;
+        font-size: 18px;
         line-height: 30px;
         font-weight: 300;
         font-style: normal;
@@ -3618,9 +3618,9 @@ website:   	http://www.themepunch.com
     .tp-caption.Woo-TitleLarge,
     .Woo-TitleLarge {
         color: rgba(0, 0, 0, 1.00);
-        font-size: 40px;
-        line-height: 40px;
-        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        font-weight: 300;
         font-style: normal;
         font-family: Playfair Display;
         padding: 0 0 0 0px;

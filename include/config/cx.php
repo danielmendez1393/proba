@@ -23,5 +23,5 @@ try {
 } catch( Exception $e) { 
   echo "Error al conectar en BD mensaje :".$e; 
 } 
-
+$acentos = $link->query("SET NAMES 'utf8'");
 ?>

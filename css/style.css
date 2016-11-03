@@ -194,7 +194,7 @@ h1, h2, h3, h4, h5, h6{
 
 }
 .main-contain {
-    padding: 60px 0;
+    padding: 5px 0;
 }
 .page-bg-color {
     background-color: #fff;
@@ -359,8 +359,8 @@ h1, h2, h3, h4, h5, h6{
     .header .menu-container {
         margin-left: auto;
         margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 
     .header > .navbar > .container {
@@ -384,13 +384,18 @@ h1, h2, h3, h4, h5, h6{
 .header .navbar-brand {
     height: 93px;
     max-height: 93px;
-    line-height: 65px;
+    line-height: 85px;
+	
 }
+
+
+
 .header .navbar-brand img {
-    width: auto;
-    height: auto;
+    width: 150;
+    height: 200;
     max-width: 100%;
     max-height: 100%;
+	
     display: inline-block;
     vertical-align: middle;
 }
@@ -429,7 +434,7 @@ h1, h2, h3, h4, h5, h6{
 }
 .header .navbar-nav > li > a {
     color: #fff;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -637,11 +642,11 @@ border-bottom: none;
     }
 
     .header .navbar-nav > li > a {
-        padding-top: 30px;
-        padding-bottom: 40px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
     .header .navbar-nav > li > a {
-        color: #444;
+        color: #ffffff;
     }
     .header .dropdown-menu.pull-right {
         float: none !important;
@@ -669,7 +674,7 @@ border-bottom: none;
     }
 
     .header .navbar-nav .open .dropdown-menu > li > a {
-        color: #687074;
+        color: #ffffff;
     }
     .header .navbar-nav .open .dropdown-menu > li > a:hover,
     .header .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -699,7 +704,7 @@ border-bottom: none;
 
     .header .navbar-nav > li > a {
         font-size: 14px;
-        padding: 12px 5px;
+        padding: 5px 5px;
     }
     .header .navbar-nav > li a {
         border-bottom: none;
@@ -727,7 +732,7 @@ border-bottom: none;
     }
 
     .header .dropdown .dropdown-submenu > a { 
-        font-size: 13px;
+        font-size: 14px;
         color: #687074 !important;
         text-transform: uppercase;
     }
@@ -738,7 +743,7 @@ border-bottom: none;
         padding: 0;
     }
     .header .navbar {
-        min-height: 40px !important;
+        min-height: 10px !important;
     }
 
     .header .container > .navbar-header, 
@@ -748,12 +753,13 @@ border-bottom: none;
         margin-bottom: -10px;
     }
     .header .navbar-nav {
-        top: 2px;
+        top: 0px;
         position: relative;
     }
 
     .header .navbar-nav > li > a {
-        padding: 20px;
+        /*padding: 20px;*/
+		 padding-top:0px; padding-bottom:0px;
         line-height: 54px;
     }
     .header .navbar-nav > li > a,
@@ -782,10 +788,10 @@ border-bottom: none;
         border-top: solid 3px #047671; 
     }
 
-    .header .dropdown-menu li a { 
+    .header .dropdown-menu li a { /*submenus*/
         color: #687074; 
-        font-size: 13px; 
-        font-weight: 400; 
+        font-size: 14px; 
+        font-weight: 500; 
         padding: 6px 25px;
     }
     .header .dropdown-menu .active > a,
@@ -1075,8 +1081,8 @@ border-bottom: none;
 }
 @media (min-width: 992px) {
     .header.cd-header-block .navbar-nav > li > a {
-        color: #687074;
-        font-weight: 400;
+        color: #fff;
+        font-weight: 600;
     }
 
     .header.cd-header-block .navbar-nav .active > a,
@@ -1109,7 +1115,7 @@ border-bottom: none;
     padding-bottom: 10px;
 }
 .main-border {
-    border-color: #9D0771  !important;
+    border-color: #6B287F  !important;
     font-weight: 400;
 }
 /*------------------------------------------------*/
@@ -1223,7 +1229,11 @@ border-bottom: none;
 
 .page-banner {
     background: #fff url("../img/shadow.png") no-repeat scroll center top;
-    padding: 30px 0;
+   
+	/*background: -webkit-linear-gradient(bottom, #FFFFFF 15%, #047671 100%);
+	background: -webkit-radial-gradient(center, circle, #FFFFFF 0%, #047671 200%);
+	/*background: -moz-linear-gradient(top, #FFFFFF, #006699);*/
+	padding: 0px 0;
 }
 .page-banner h2 {
     font-weight: 500;
@@ -1299,7 +1309,7 @@ ul.breadcrumbs li {
 }
 
 .serviceBox_2:hover {
-    background:#4db2ec;
+    background:#047671;
     color: #fff;
     -webkit-transition: background-color 0.7s ease-in-out;
     -moz-transition: background-color 0.7s ease-in-out;
@@ -1314,7 +1324,7 @@ ul.breadcrumbs li {
     color: #fff;
 }
 .serviceBox_2:hover i{
-    color:#4db2ec;
+    color:#047671;
     background:#fff;
 }
 /*------------------------------------------------*/
@@ -1912,6 +1922,8 @@ img.mfp-img {
     background: #fff none repeat scroll 0 0;
     color: inherit;
     padding: 20px 0;
+	word-wrap: break-word;
+	
 }
 .team-content .social-icons {
     float: none;
@@ -1942,7 +1954,7 @@ img.mfp-img {
     border-radius: 0;
     color: #fff;
     border-color: #eee;
-    background: #047671 ; 
+    background: #6B287F ; 
 }
 
 .panel-title {
@@ -2831,10 +2843,11 @@ textarea {
 /*------------------------------------------------*/
 .imagen-median{
     width: 100%;
-    max-width: 220px;
-    height: 170px;
+    max-width: 200px;
+    height: 150px;
     align-self: center;
     align-items: center;
+	
 }
 .imagen-chicas{
     display: inline-block;
@@ -3141,7 +3154,7 @@ textarea {
     transform: translate3d(-100%, 0px, 0px);
      -webkit-transform: translate3d(-100%, 0px, 0px);
 }
-.product-img-pri, .product-img-second{
+.product-img-pri, .product-img-second, .product-img{
     display: block;
     transition: all 0.3s ease 0s;
     width: 100%;
@@ -3362,13 +3375,13 @@ textarea {
 .call-to-action-style1 {
     background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
     position: relative;
-    padding: 60px 0;
+    padding: 10px 0;
 }
 .call-to-action-style1 h2, .call-to-action-style1 p {
     color: #ffffff;
 }
 .call-to-action-style1 .btn-custom.btn-large.border-btn, .call-to-action-style2 .btn-custom.btn-large.border-btn , .call-to-action-style3 .btn-custom.btn-large.border-btn{
-    padding: 18px 60px;
+    padding: 18px 10px;
 }
  .call-to-action-style2, .call-to-action-style3{
   padding: 60px 0;
@@ -3385,7 +3398,7 @@ textarea {
 /*--------------[FOOTER STYLE]-----------*/
 /*------------------------------------------------*/
 .main-footer {
-    background: #fff none repeat scroll 0 0;
+	background: #fff none repeat scroll 0 0;
     padding: 30px 0;
 }
 .footer-about-block p {

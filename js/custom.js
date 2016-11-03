@@ -105,10 +105,11 @@ $(function() {
 
     /***************** Owl Carousel Blog ******************/
     $('#owl-blog').owlCarousel({
+		
         navigation: false, // Show next and prev buttons
         paginationSpeed: 400,
         singleItem: true,
-        autoPlay: true
+        autoPlay: true, 
 
     });
 

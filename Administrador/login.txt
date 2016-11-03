@@ -1,0 +1,25 @@
+<div class="col col-md-4 col-sm-4">
+                                <h3 class="cv-theme-widget-title">
+                                    <span class="main-border">Login</span>
+                                </h3>
+                                <ul class="contact-list-unstyled">
+                                    <li><i class="fa fa-info-circle" ></i>En esta Liga Podras Ingresar al Panel Administrativo </li>
+                                    <li><i class="fa fa fa-users"></i><a href="#" id="MosOcu" >Acceso al Panel</a></li>
+                                    <div id="uno" style="display:none;">
+                                        <form action="ingresar.php" method="POST" name="form_login">
+                                            <div  class="input-group margin-bottom-sm" >
+                                                  <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                                  <input class="form-control" type="text" placeholder="User" name="nnombre">
+                                            </div>
+                                            <div class="input-group">
+                                                  <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+                                                  <input class="form-control" type="password" placeholder="Password" name="npassword">
+                                            </div>
+                                            
+                                            <div align="center" style="padding:5px;top-align:8px; align-content: center; position: center;" >
+                                                 <a type="submit" class="btn-custom btn-mini border-btn btn-gray"  href="javascript: form_login.submit();"><i class="fa fa-sign-in"></i> Ingresar</a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </ul>
+                            </div>
