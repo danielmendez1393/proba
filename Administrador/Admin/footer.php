@@ -29,7 +29,7 @@
                     clear: 'borrar',
                     close: 'aceptar',
                     firstDay: 1,
-                    format: 'dddd d !de mmmm !de yyyy',
+                    format: 'dd/mm/yyyy',
                     formatSubmit: 'dd/mm/yyyy',
     
 });

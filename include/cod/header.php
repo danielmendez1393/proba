@@ -64,7 +64,7 @@
                                             </div>
                                             
                                             <div align="center" style="padding:5px;top-align:8px; align-content: center; position: center;" >
-                                                 <a type="submit" class="btn-custom btn-mini border-btn btn-gray"  href="javascript: form_login.submit();"><i class="fa fa-sign-in"></i> Ingresar</a>
+                                                 <button type="submit" class="btn-custom btn-mini border-btn btn-gray"  href="javascript: form_login.submit();"><i class="fa fa-sign-in"></i> Ingresar</a>
                                             </div>
                                         </form>
                             
