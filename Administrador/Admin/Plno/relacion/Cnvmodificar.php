@@ -1,6 +1,6 @@
 <?php 
   session_start();
-  require_once("../../../include/config/config.php");
+  require_once("../../../../include/config/config.php");
   require_once($CONFIG['pathinclude']."config/cx.php");
   require_once($CONFIG['pathinclude']."cls/pleno.php");  
    $objCnv = new convocatorias;
@@ -9,7 +9,7 @@
   $v_archivo = $_FILES["Archcnv"]["name"];
   $v_idcnv = $_POST['id_Cnv'];
   $v_archivohidden = $_POST['archhidden'];
-
+  $v_anio = $_POST['v_numanio'];
   #$v_activo = $_POST['acti'];
 
 # definimos la carpeta destino
@@ -61,19 +61,19 @@
       }else{        
                    
           if($v_archivo == "" && $v_archivohidden ==""){
-           $IngresarResol = $objCnv->update($v_idcnv,$v_fecha,$v_convenio, $v_archivo); 
+           $IngresarResol = $objCnv->update($v_idcnv,$v_fecha,$v_convenio, $v_archivo,$v_anio); 
                echo '<script type="text/javascript"> 
                                                     alert("Los Datos se Guardaron Satisfactoriamente");
                                                     window.parent.location="../../paneladm.php?p=pleno&j=convocatorias&crud=read";
                                                     </script>';   
         }elseif($v_archivo =="" && $v_archivohidden !=""){
-           $IngresarResol = $objCnv->update($v_idcnv,$v_fecha,$v_convenio, $v_archivohidden); 
+           $IngresarResol = $objCnv->update($v_idcnv,$v_fecha,$v_convenio, $v_archivohidden,$v_anio); 
                echo '<script type="text/javascript"> 
                                                     alert("Los Datos se Guardaron Satisfactoriamente");
                                                     window.parent.location="../../paneladm.php?p=pleno&j=convocatorias&crud=read";
                                                     </script>';         
         }else{
-           $IngresarResol = $objCnv->update($v_idcnv,$v_fecha,$v_convenio, $v_archivo); 
+           $IngresarResol = $objCnv->update($v_idcnv,$v_fecha,$v_convenio, $v_archivo,$v_anio); 
                echo '<script type="text/javascript"> 
                                                     alert("Los Datos se Guardaron Satisfactoriamente");
                                                     window.parent.location="../../paneladm.php?p=pleno&j=convocatorias&crud=read";

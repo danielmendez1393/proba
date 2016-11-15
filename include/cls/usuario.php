@@ -122,4 +122,89 @@
 		
 	}
 
+	/**
+	* 
+	*/
+	class tiposusr
+	{
+		
+		function agregar($tipousr)
+		{
+			global $link;
+			$sql = "insert into ct_tipousr(tusr_nombre) values ('%1\$s')";
+			$sql = sprintf($sql,$tipousr);
+			$result = $link->query($sql);
+			$result->close();
+			$link->next_result();
+			return $result;
+		}
+		function borrar($idtipo)
+		{
+			global $link;
+			$sql = "update ct_tipousr set activo = 0 where id_tipousr = ('%1\$s')";
+			$sql = sprintf($sql, $idtipo);
+			echo $sql;
+			$result = $link->query($sql);
+			$result->close();
+			$link->next_result();			
+			return $result;
+		}
+		function modificar($tipousr, $idtipo)
+		{
+			global $link;
+			$sql = "update ct_tipousr set tusr_nombre = ('%1\$s') where id_tipousr =('%2\$s')";
+			$sql = sprintf($sql,$tipousr, $idtipo);
+			//echo $sql;
+			$result = $link->query($sql);
+			$result->close();
+			$link->next_result();
+			return $result;
+		}
+		function ver()
+		{
+			global $link;
+			$sql = "select * from ct_tipousr where activo = 1";
+			$result = $link->query($sql);
+			$resultado = array();
+			while( $row = mysqli_fetch_assoc($result) ){
+				$resultado[]=$row;			}
+			$result->close();
+			return $resultado;
+		}
+		function verall($id_tipousr){
+			global $link;
+			$sql = "select * from ct_tipousr where id_tipousr = ('%1\$s')";
+			$sql = sprintf($sql,$tipousr, $id_tipousr);
+			$result = $link->query($sql);
+			$resultado = array();
+			while( $row = mysqli_fetch_assoc($result) ){
+				$resultado=$row;			}
+			$result->close();
+			return $resultado;
+		}
+	}
+	/**
+	* 
+	*/
+	/*class perfil 
+	{
+		
+		function (argument)
+		{
+			# code...
+		}
+		function agregar(argument)
+		{
+			# code...
+		}
+		function agregar(argument)
+		{
+			# code...
+		}
+		function agregar(argument)
+		{
+			# code...
+		}
+	}*/
+
  ?>

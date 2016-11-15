@@ -2,7 +2,7 @@
 	session_start();
 	$vid = $_POST['cnv_id'];
 	
-	require_once("../../../include/config/config.php");
+	require_once(".././../../include/config/config.php");
 	require_once($CONFIG['pathinclude']."config/cx.php");
 	require_once($CONFIG['pathinclude']."cls/pleno.php");
 	$objres = new convocatorias;

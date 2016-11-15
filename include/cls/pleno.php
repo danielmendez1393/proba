@@ -188,11 +188,11 @@ class resoluciones
 class convocatorias
 {
 	
-	function create($v_fecha,$v_tipo,$v_archivo)
+	function create($v_fecha,$v_tipo,$v_archivo, $anio)
 	{
 		global $link;
-		$sql = "CALL Convocatoria_agregar('%1\$s','%2\$s','%3\$s')";
-		$sql = sprintf($sql, $v_fecha,$v_tipo,$v_archivo);
+		$sql = "CALL Convocatoria_agregar('%1\$s','%2\$s','%3\$s','%4\$s')";
+		$sql = sprintf($sql, $v_fecha,$v_tipo,$v_archivo, $anio);
 		$result = $link->query($sql);
 		$link->next_result();			
 		return $result;
@@ -210,11 +210,11 @@ class convocatorias
 		$link->next_result();			
 		return $resultado;
 	}
-	function update($v_idcnv,$v_fecha,$v_tipo,$v_archivo)
+	function update($v_idcnv,$v_fecha,$v_tipo,$v_archivo, $anio)
 	{
 		global $link;
-		$sql = "CALL Convocatoria_modificar('%1\$s','%2\$s','%3\$s','%4\$s')";
-		$sql = sprintf($sql,$v_idcnv,$v_fecha,$v_tipo,$v_archivo);
+		$sql = "CALL Convocatoria_modificar('%1\$s','%2\$s','%3\$s','%4\$s','%5\$s')";
+		$sql = sprintf($sql,$v_idcnv,$v_fecha,$v_tipo,$v_archivo, $anio);
 		$result = $link->query($sql);	
 		$link->next_result();		
 		return $result;

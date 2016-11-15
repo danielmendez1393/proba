@@ -1,6 +1,6 @@
 <?php 
     session_start();
-    require_once("../include/config/config.php");
+    require_once("../../include/config/config.php");
     require_once($CONFIG['pathinclude']."config/cx.php");
     require_once($CONFIG['pathinclude']."cls/transparencia.php");
     #$objLey = new leyes;

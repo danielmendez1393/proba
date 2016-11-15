@@ -27,9 +27,14 @@
                               <label>Tipo de Convenio</label>
                             </div>
 
+                            <div class="input-field col s12">
+                              <input name="v_numanio" type="number" class="validate" min="2000" max="2020" step="1" required="" value="<?=$ConsulModi['cnv_anio']?>">
+                              <label for="v_numanio">Año de Acuerdo</label>
+                            </div>   
+
                             <div class="input-field col s12">                                                      
                               <input id="nombre" type="text" class="datepicker" name="fecha_cnv" required value="<?=$ConsulModi['cnv_fecha']?>">
-                              <label for="nombre">Fecha de Resolucion</label>
+                              <label for="nombre">Fecha de Convocatoria</label>
                             </div> 
                               
                               <div class="col s12">
@@ -37,7 +42,7 @@
                                     <div class="btn">
                                       <i class="material-icons">attach_file</i>
                                       <span>Archivo</span>
-                                      <input type="file" name="Archcnv" required="" >
+                                      <input type="file" name="Archcnv"  >
                                     </div>
                                     <div class="file-path-wrapper">
                                       <input class="file-path validate" type="text" value="<?=$ConsulModi['cnv_archivo']?>">

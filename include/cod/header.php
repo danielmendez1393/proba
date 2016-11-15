@@ -53,7 +53,7 @@
                                     <li><i class="fa fa-info-circle" ></i>En esta Liga Podras Ingresar al Panel Administrativo </li>
                                     <li><i class="fa fa fa-users"></i><a href="#" id="MosOcu" >Acceso al Panel</a></li>
                                     <div id="uno" style="display:none;">
-                                        <form target="ingresalog" action="Administrador/ingresar.php" method="POST" name="form_login">
+                                        <form target="" action="Administrador/ingresar.php" method="POST" name="form_login">
                                             <div  class="input-group margin-bottom-sm" >
                                                   <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
                                                   <input class="form-control" type="text" placeholder="User" name="nnombre">

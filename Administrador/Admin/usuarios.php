@@ -5,9 +5,9 @@
 		                      <ul class="nav nav-pills">
 		                        <li class="<?php echo $pagina == 'agregar' ? 'active' : ''; ?>">	<a data-toggle="pill" href="#" onclick="window.location='?p=usuarios&j=agregar'">Agregar</a></li>
               					<li class="<?php echo $pagina == 'consulta' ? 'active' : ''; ?>">	<a data-toggle="pill" href="#" onclick="window.location='?p=usuarios&j=consulta'">Consulta</a></li>
-              					<!--<li class="<?php echo $pagina == 'eliminar' ? 'active' : ''; ?>">	<a data-toggle="pill" href="#" onclick="window.location='?p=usuarios&j=eliminar'">Eliminar</a></li>	-->
-              					<!--<li class="<?php echo $pagina == 'modificar' ? 'active' : ''; ?>">	<a data-toggle="pill" href="#" onclick="window.location='?p=usuarios&j=modificar'">Modificar</a></li>
-              					-->
+              					<li class="<?php echo $pagina == 'tipousr' ? 'active' : ''; ?>">	<a data-toggle="pill" href="#" onclick="window.location='?p=usuarios&j=tipousr'">Tipos de Usuarios</a></li>	
+              					<li class="<?php echo $pagina == 'perfil' ? 'active' : ''; ?>">	<a data-toggle="pill" href="#" onclick="window.location='?p=usuarios&j=perfil'">Tipos de Perfiles</a></li>
+              					
               
 		                      </ul>
 		                      <div>
@@ -31,7 +31,17 @@
 							    	case 'modificar':
 							    		require_once  'user/' . 'modificar' . '.php';
 							    		# code...
-							    		break;		    	
+							    		break;		
+
+							    	case 'perfil':
+							    		require_once  'user/' . 'perfil' . '.php';
+							    		# code...
+							    		break;		
+
+							    	case 'tipousr':
+							    		require_once  'user/' .'tipousr' . '.php';
+							    		# code...
+							    		break;	    	
 
 							    	default:
 							    		require_once 'user/' . 'agregar'. '.php';

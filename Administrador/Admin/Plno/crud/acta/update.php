@@ -38,7 +38,7 @@
                                   <div class="btn">
                                     <i class="material-icons">attach_file</i>
                                     <span>Archivo</span>
-                                    <input type="file" name="Arch" required="" >
+                                    <input type="file" name="Arch"  >
                                   </div>
                                   <div class="file-path-wrapper">
                                     <input class="file-path validate" type="text" value="<?=$ConsulModi['act_archivo']?>">

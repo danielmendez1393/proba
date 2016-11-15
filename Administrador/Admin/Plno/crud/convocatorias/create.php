@@ -19,10 +19,15 @@
                                                       <option value="Administrativo">Administrativo</option>
                                                       <option value="Extraordinario">Extraordinario</option>
                                                       <option value="Juridico">Juridico</option>
-                                                      <option value="Soledme">Soledme</option>
+                                                      <option value="Solemne">Solemne</option>
                                                     </select>
                                                     <label>Tipo de Convocatoria</label>
                                                   </div>
+
+                                                  <div class="input-field col s12">
+                                                    <input name="v_numanio" type="number" class="validate" min="2000" max="2020" step="1" value="2016" required="">
+                                                    <label for="v_numanio">Año de Convocatoria</label>
+                                                  </div>  
 
                                                   <div class="input-field col s12">                                                      
                                                     <input id="nombre" type="text" class="datepicker" name="fecha_cnv" required >

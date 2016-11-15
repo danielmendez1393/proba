@@ -10,7 +10,7 @@
                                         
                                         <div class="form-main" >
                                             <div class="row">
-                                              <form class="col l12"  method="POST" target="ingre"  enctype="multipart/form-data" name="inscripcion" action="<?= $CONFIG['pathpln']?>relacion/Actagregar.php">
+                                              <form class="col l12"  method="POST" target=""  enctype="multipart/form-data" name="inscripcion" action="<?= $CONFIG['pathpln']?>relacion/Actagregar.php">
                                                 <div class="row">
                                                   <input type="hidden" name="id_nts" placeholder="ID DE USUARIO" >
                                                   

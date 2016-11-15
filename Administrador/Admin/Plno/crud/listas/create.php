@@ -14,7 +14,7 @@
                                                 <div class="row">
                                                  <div class="input-field col s12">
                                                       <i class="material-icons prefix">note</i>
-                                                      <textarea id="icon_prefix2" length="400" class="materialize-textarea" name="expedien"></textarea>
+                                                      <textarea id="icon_prefix2" length="500" class="materialize-textarea" name="expedien"></textarea>
                                                       <label for="icon_prefix2">Expedientes</label>
                                                     </div>   
 
